@@ -23,7 +23,7 @@ const Sound = () => {
   return (
     <div className="fixed top-4 right-2.5 xs:right-4 z-50 group">
       <audio ref={audioRef} loop>
-        <source src={"/audio/tell-em.mp3"} type="audio/mpeg" />
+        <source src={"/audio/9am.mp3"} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <motion.button
