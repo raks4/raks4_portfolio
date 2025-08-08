@@ -27,7 +27,7 @@ export default function Home() {
       />}
       {/* Top-left text */}
       <div className="absolute top-4 left-4 z-50 text-white text-lg font-bold">
-        bitraks
+        rakshak
       </div>
 
       <div className="w-full h-screen">
