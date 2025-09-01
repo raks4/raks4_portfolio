@@ -47,10 +47,10 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: "RecipeFinder",
-    description: "Discover new recipes",
+    name: "Attendance Taker",
+    description: "The best method for tracking attendance manually",
     date: "2022-07-12",
-    demoLink: "https://recipefinder.example.com",
+    demoLink: "https://attendance-taker.example.com",
   },
   {
     id: 6,
