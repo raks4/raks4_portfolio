@@ -61,7 +61,7 @@ export const projectsData = [
   },
   {
     id: 7,
-    name: "VOIS-Vodafone maybe",
+    name: "Neetcode youtube clone",
     description: "Conversational LLMs thing",
     date: "2022-04-18",
     demoLink: "https://studybuddy.example.com",
