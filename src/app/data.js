@@ -102,12 +102,12 @@ export const BtnList = [
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/bitraks",
+    link: "https://www.linkedin.com/in/raks4",
     icon: "linkedin",
     newTab: true,
   },
   {
-    label: "X",
+    label: "Twitter/X",
     link: "https://x.com/RiteSike",
     icon: "twitter",
     newTab: true,

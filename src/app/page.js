@@ -10,9 +10,9 @@ const EarthCanvas = dynamic(() => import("@/components/models/Earth"), {
   ssr: false, // Ensure it's only rendered on the client
 });
 
-const startcanvas = dynamic(() => import("@/components/models/Stars"), {
-  ssr: false, // Ensure it's only rendered on the client
-});
+// const startcanvas = dynamic(() => import("@/components/models/Stars"), {
+//   ssr: false, // Ensure it's only rendered on the client
+// });
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       />}
       {/* Top-left text */}
       <div className="absolute top-4 left-4 z-50 text-white text-lg font-bold">
-        rakshak
+        raks4
       </div>
 
       <div className="w-full h-screen">
@@ -35,7 +35,7 @@ export default function Home() {
         
         <Navigation />
         <EarthCanvas />
-        <StarsCanvas />
+       {/* <StarsCanvas /> */}
       </div>
     </main>
   );

@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="fixed inset-0 overflow-hidden">
       <Image
         src={bg}
         priority
@@ -25,23 +25,22 @@ export default function Home() {
       />
 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
-        <RenderModel>
-          
-        </RenderModel>
+        <RenderModel></RenderModel>
       </div>
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[20%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h1 className="font-bold  text-6xl xs:text-7xl sm:text-8xl  lg:text-9xl text-accent">
-            bitraks
+          <h1 className="font-bold  text-3xl xs:text-3xl sm:text-3xl  lg:text-5xl text-accent">
+            raks4
           </h1>
           <p className="font-light text-foreground text-lg">
-            Hi! I am Rakshak and I love 0s and 1s.
+            Hi! I am Rakshak R Naik and I love 0s and 1s. Everything here is made
+            from 0s and 1s , how crazy is that.
           </p>
         </div>
       </div>
 
       {/* <AboutDetails /> */}
-    </>
+    </div>
   );
 }
