@@ -1,5 +1,9 @@
 Portfolio Website Of Rakshak aka bitraks/raks4 
 
+
+Website needs updating on content, to be done later.
+
+
 The website draws inspirations from 2 main tutorials listed below. It is an attempt to learn and make a modern website for myself and I had quite a bit of fun making it (though it doesn't serve much purpose currently >_> ).
 
 Links to the tutorials and all related assets can be found on their github linked in description:
