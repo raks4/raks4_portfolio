@@ -7,11 +7,15 @@ import dynamic from "next/dynamic";
 // Dynamically import RenderModel with ssr: false
 const RenderModel = dynamic(() => import("@/components/RenderModel"), {
   ssr: false,
+  loading: () => null,
 });
 
 export const metadata = {
   title: "Projects",
 };
+
+// Skip prerendering for this page to avoid Three.js build errors
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   return (
