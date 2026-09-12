@@ -2,10 +2,10 @@ import Image from "next/image";
 import bg from "../../../../public/background/unsplash_earth.jpg";
 import ProjectList from "@/components/projects";
 import { projectsData } from "../../data";
-import dynamic from "next/dynamic";
+import dynamicImport from "next/dynamic";
 
 // Dynamically import RenderModel with ssr: false
-const RenderModel = dynamic(() => import("@/components/RenderModel"), {
+const RenderModel = dynamicImport(() => import("@/components/RenderModel"), {
   ssr: false,
   loading: () => null,
 });
