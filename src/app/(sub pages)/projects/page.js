@@ -10,10 +10,6 @@ const RenderModel = dynamic(() => import("@/components/RenderModel"), {
   loading: () => null,
 });
 
-export const metadata = {
-  title: "Projects",
-};
-
 // Skip prerendering for this page to avoid Three.js build errors
 export const dynamic = 'force-dynamic';
 
