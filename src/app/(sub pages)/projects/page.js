@@ -2,16 +2,10 @@ import Image from "next/image";
 import bg from "../../../../public/background/unsplash_earth.jpg";
 import ProjectList from "@/components/projects";
 import { projectsData } from "../../data";
-import dynamicImport from "next/dynamic";
 
-// Dynamically import RenderModel with ssr: false
-const RenderModel = dynamicImport(() => import("@/components/RenderModel"), {
-  ssr: false,
-  loading: () => null,
-});
-
-// Skip prerendering for this page to avoid Three.js build errors
-export const dynamic = 'force-dynamic';
+export const metadata = {
+  title: "Projects",
+};
 
 export default function Home() {
   return (
@@ -25,12 +19,6 @@ export default function Home() {
       />
 
       <ProjectList projects={projectsData} />
-
-      <div className="flex items-center justify-center fixed  top-16  lg:top-20 -translate-x-1/2 lg:translate-x-0 -z-10 left-1/2 lg:-left-24 h-screen">
-        <RenderModel>
-          
-        </RenderModel>
-      </div>
     </>
   );
 }
