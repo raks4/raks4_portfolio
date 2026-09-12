@@ -2,13 +2,12 @@ import Image from "next/image";
 import bg from "../../../../public/background/unsplash_earth.jpg";
 import ProjectList from "@/components/projects";
 import { projectsData } from "../../data";
-import RenderModel from "@/components/RenderModel";
-//import EarthCanvas from "@/components/models/EarthCanvas";
 import dynamic from "next/dynamic";
 
-// const EarthCanvas = dynamic(() => import("@/components/models/Earth"), {
-//   ssr: false,
-// });
+// Dynamically import RenderModel with ssr: false
+const RenderModel = dynamic(() => import("@/components/RenderModel"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "Projects",
